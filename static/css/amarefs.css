@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Custom ref styles */
+.hero-bg { 
+    height: 500px;
+    background: linear-gradient(to bottom, hsl(220, 26%, 14%), hsl(218, 23%, 23%)); 
+}
+
+.brand-img {
+    width: 200px;
+    height:auto
+}
+
+h1 {font-size: clamp(2rem, 1.333rem + 1.852vw, 3rem);}
+h2 {font-size: clamp(1.75rem, 1.083rem + 1.852vw, 2.75rem);}
+h3 {font-size: clamp(1.5rem, 1rem + 1.389vw, 2.25rem);}
+p {font-size: clamp(.75rem, 0.5rem + 1.389vw, 1.5rem);}
+
+.btn-ref-orange { 
+    background-color: #ed8835; 
+    border-color: hsl(27, 84%, 57%); 
+}
+
+.btn-ref-orange:hover { 
+    background-color: hsl(27, 84%, 65%); 
+}
+
+.nav-link:hover { color: hsl(27, 84%, 57%)!Important;  }
+
+.abo-active {color: hsl(27, 84%, 57%)!Important; }
+
+a {
+    text-decoration: none;
+    color: hsl(0 0% 100%)
+}
+
+.uil-blue {background-color: hsl(210, 50%, 40%)!important;}
+
+.uil-img {
+    height: 50px;
+    width: auto;
+}
+
+/* Responsive font tweaks */
+@media screen and (max-width: 576px) {
+    h1 { font-size: 2rem; }
+    .hero-bg{background-image: none;}
+}
+
+@media (min-width: 768px) {
+    .hero-bg {
+        height: 600px;
+        background-image: url('../images/spotlight_basketball.jpg'); /* Replace with your image path */
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    .overlay {       
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+        padding: 10px 0        
+    }
+}
